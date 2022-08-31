@@ -1,6 +1,8 @@
 import pygame
 import random
 
+#Version 1.0 31/8/2022
+#agregamos "+"" a la matriz de bloques
 pygame.init()
 SCREEN = WIDTH, HEIGHT = 300, 500
 win = pygame.display.set_mode(SCREEN, pygame.NOFRAME)
@@ -55,10 +57,11 @@ class Tetramino:
         'L' : [[1, 2, 5, 9], [0, 4, 5, 6], [1, 5, 9, 8], [4, 5, 6, 10]],
         'J' : [[1, 2, 6, 10], [5, 6, 7, 9], [2, 6, 10, 11], [3, 5, 6, 7]],
         'T' : [[1, 4, 5, 6], [1, 4, 5, 9], [4, 5, 6, 9], [1, 5, 6, 9]],
-        'O' : [[1, 2, 5, 6]]
+        'O' : [[1, 2, 5, 6]],
+		'+' : [[1, 5, 4, 9, 6]]
 	}
 
-	TYPES = ['I', 'Z', 'S', 'L', 'J', 'T', 'O']
+	TYPES = ['I', 'Z', 'S', 'L', 'J', 'T', 'O', '+']
 
 	def __init__(self, x, y):
 		self.x = x
