@@ -4,7 +4,7 @@ import random
 #Version 1.0 31/8/2022
 #agregamos "+"" a la matriz de bloques
 pygame.init()
-SCREEN = WIDTH, HEIGHT = 300, 500
+SCREEN = WIDTH, HEIGHT = 200, 500
 win = pygame.display.set_mode(SCREEN, pygame.NOFRAME)
 
 CELLSIZE = 20
