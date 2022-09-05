@@ -3,6 +3,11 @@ import random
 
 #Version 1.0 31/8/2022
 #agregamos "+"" a la matriz de bloques
+
+#Version 1.1 5/9/2022
+#modifique el ancho a 10 columnas
+
+
 pygame.init()
 SCREEN = WIDTH, HEIGHT = 200, 500
 win = pygame.display.set_mode(SCREEN, pygame.NOFRAME)
