@@ -156,6 +156,12 @@ class Tetris:
 		if self.intersects():
 			self.figure.y -= 1
 			self.freeze()
+	
+	def go_up(self):
+		self.figure.y += 1
+		if self.intersects():
+			self.figure.y -= 1
+			self.freeze()
 
 	def go_side(self, dx):
 		self.figure.x += dx
@@ -200,8 +206,8 @@ while running:
 				if event.key == pygame.K_RIGHT:
 					tetris.go_side(1)
 
-				if event.key == pygame.K_UP:
-					tetris.rotate()
+				if event.key == pygame.KEYUP:
+					tetris.go_up(-1)
 
 				if event.key == pygame.K_DOWN:
 					move_down = True
@@ -219,7 +225,7 @@ while running:
 				running = False
 
 		if event.type == pygame.KEYUP:
-			if event.key == pygame.K_DOWN:
+			if event.key == pygame.KEYDOWN:
 				move_down = False
 
 	# tetris.draw_grid()
